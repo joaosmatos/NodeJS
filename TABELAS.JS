@@ -3,3 +3,9 @@ CREATE TABLE usuarios(
     email VARCHAR(100),
     idade INT
 );
+
+INSERT INTO usuarios(nome, email, idade) VALUES(
+    "joão",
+    "email@teste.com",
+    8
+);
