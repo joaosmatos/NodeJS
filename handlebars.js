@@ -14,6 +14,11 @@ const sequelize = new Sequelize('test', 'root', 'saopaulofc1935@', {
     host: "lolcalhost",
     dialect: 'mysql'
 })
+// rotas
+
+    app.get('/cad', function(req, res){
+        res.render('formulario')
+    })
 
 
 app.listen(8081, function(req, res){
