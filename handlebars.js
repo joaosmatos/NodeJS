@@ -20,6 +20,10 @@ const sequelize = new Sequelize('test', 'root', 'saopaulofc1935@', {
         res.render('formulario')
     })
 
+    app.post('/add',function(req, res){
+        res.send('FORMULARIO RECEBIDO!')
+    })
+
 
 app.listen(8081, function(req, res){
     console.log("servidor rodando na url http://localhost:8081");
