@@ -16,7 +16,10 @@ const Post = require('./models/post')
 // rotas
 
     app.get('/', function(req, res){
-        res.render('home')
+        Post.all().then(function(pots){
+           res.render('home', {nome: "victor", sobrenome: "lima"}) 
+        })
+        
     })
 
     app.get('/cad', function(req, res){
